@@ -4,12 +4,6 @@ import pandas as pd
 from datetime import datetime
 
 
-
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-from datetime import datetime
-
 def scrape_and_export(url, desired_device_types):
     print(f"Fetching data from {url}")
 

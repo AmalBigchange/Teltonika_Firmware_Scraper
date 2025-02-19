@@ -1,18 +1,25 @@
 import logging
 import json
+from webscraping import scrape_and_export # Ensure the correct module name
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 def lambda_handler(event, context):
-    logger.info("This is a test log for info")
-    logger.error("This is a test log for error")
-    logger.error("Testing CI/CD")
+    logger.info("Starting Scraper")
 
-    logger.error("Testing if the lambda function works")
+    try:
+        scrape_and_export()  # Call the function from webscraping_2_0
+        logger.info("Scraping completed successfully.")
 
+        return {
+            'statusCode': 200,
+            'body': json.dumps({'message': 'Firmware successfully scraped'})
+        }
 
-    return {
-        'statusCode': 200,
-        'body': 'Hello from Lambda v5!'
-    }
+    except Exception as e:
+        logger.error(f"Error occurred: {str(e)}")
+        return {
+            'statusCode': 500,
+            'body': json.dumps({'error': str(e)})
+        }

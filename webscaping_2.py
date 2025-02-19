@@ -60,3 +60,9 @@ desired_device_types = [
 # Execute scraping
 firmware_versions = scrape_firmware_versions(url, desired_device_types)
 logging.info(f"Firmware versions: {firmware_versions}")
+
+__name__ = "__main__"
+if __name__ == "__main__":
+    logging.info("Starting scraper")
+    scrape_firmware_versions(url, desired_device_types)
+    logging.info("Scraper finished")
