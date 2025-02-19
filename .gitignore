@@ -1,1 +1,6 @@
-Firmware_data_20250219_121804.xlsx
+*xlsx
+*.terraform
+*.tfstate
+*.tfstate.backup
+*.zip
+*.hcl
