@@ -84,7 +84,7 @@ url = 'https://wiki.teltonika-gps.com/view/Firmware_versions'
 # Specify the updated desired device types
 desired_device_types = [
     'FMB001', 'FMB003', 'FMC001', 'FMC003', 'FMM001(BG96)', 'FMM003', 'FMC130SLM320', 'FMB204',
-    'TAT100', 'TAT140', 'FMB140', 'FMC640', "FMB130", "FMP100", "FMM00A"
+    'TAT100', 'TAT140', 'FMB140', 'FMC640', "FMB130", "FMP100", "FMM00A","hello"
 ]
 
 # Run the scraping and export function

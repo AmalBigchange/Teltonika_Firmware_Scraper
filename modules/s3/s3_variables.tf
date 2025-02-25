@@ -9,6 +9,7 @@ variable "bucket_name" {
 variable "source_file" {
   description = "Path to the source file to be uploaded."
   type        = string
+  default = "./src"
 }
 
 variable "output_path" {

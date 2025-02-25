@@ -6,7 +6,7 @@ data "aws_s3_bucket" "existing_bucket" {
 # Creating a ZIP archive of the source code
 data "archive_file" "lambda_zip" {
   type        = "zip"         # Defining the type of archive (ZIP in this case)
-  source_file = var.source_file  # Path to the source code file, provided via a variable
+  source_dir = var.source_file  # Path to the source code file, provided via a variable
   output_path = var.output_path  # Naming the output ZIP file (can be dynamic via a variable)
 }
 

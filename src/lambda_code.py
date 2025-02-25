@@ -1,6 +1,6 @@
 import logging
 import json
-from webscraping import scrape_and_export # Ensure the correct module name
+from src.webscraping import scrape_and_export # Ensure the correct module name
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
