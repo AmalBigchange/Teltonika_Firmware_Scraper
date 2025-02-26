@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"  # Specifies the Terraform Registry as the source
-      version = "~> 4.0"         # Use a version constraint to ensure compatibility
+      version = ">= 5.67.0"         # Use a version constraint to ensure compatibility
     }
   }
 }
